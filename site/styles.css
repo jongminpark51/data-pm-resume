@@ -140,7 +140,16 @@ a {
 }
 
 .slide-centered .slide-inner {
+  min-height: calc(100vh - 82px);
   justify-content: center;
+}
+
+.slide-centered .section-header {
+  max-width: 1020px;
+}
+
+.slide-centered .section-header p {
+  max-width: 880px;
 }
 
 .slide-cover .slide-inner {
@@ -477,6 +486,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 14px;
+  min-height: 100%;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
@@ -598,6 +608,10 @@ a {
 
   .slide-inner {
     padding: 10px 0;
+  }
+
+  .slide-centered .slide-inner {
+    min-height: auto;
   }
 
   .hero-copy h1,
